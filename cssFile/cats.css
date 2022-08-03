@@ -14,44 +14,6 @@ body {
     margin-top: 1%;
 }
 
-/*/ חיפוש /*/
-
-.form__field {
-    color: black;
-    text-decoration: none;
-    font-family: "Luckiest Guy", cursive;
-    width: auto;
-    border: 0;
-    border-bottom: 1px solid black;
-    outline: 0;
-    font-size: 9px;
-    background: transparent;
-    transition: border-color 0.2s;
-}
-
-.form__field::placeholder {
-    color: black;
-    font-size: 13px;
-}
-
-.form__field:placeholder-shown~.form__label {
-    cursor: text;
-}
-
-.form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-}
-
-.form__field:focus {
-    padding-bottom: 3px;
-    border-width: 3px;
-    border-image: linear-gradient(to right, #996911, #38ef7d);
-    border-image-slice: 1;
-}
-
 
 
 /*/  אייקונים למעלה   /*/
@@ -163,7 +125,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
 
 .TextPop {
@@ -235,8 +197,8 @@ body {
 }
 
 .info img {
-    width: 13vh;
-    height: 13vh;
+    width: 10vh;
+    height: 10vh;
     cursor: pointer;
 }
 
@@ -402,15 +364,14 @@ body {
 
     .line {
         width: 30px;
-        height: 3px;
+        height: 2px;
         background: rgb(0, 0, 0);
         margin: 5px;
     }
 
     .hamburger {
-        background: rgb(243, 247, 59);
-        border: 4px solid rgb(255, 255, 255);
-        border-radius: 25%;
+        background: none;
+        border: 1px solid rgb(0, 0, 0);
         margin-top: -4%;
         position: absolute;
         cursor: pointer;
@@ -423,7 +384,7 @@ body {
 
     .links {
         position: fixed;
-        background: url(images/template_main.jpg);
+        background: url(/images/template_main.jpg);
         border-radius: 20% 40% 5%;
         height: auto;
         width: 100%;
@@ -480,7 +441,7 @@ body {
 
 .info12 {
     margin-top: 2%;
-    background: url(images/catPro.png) no-repeat center center;
+    background: url(/images/catPro.png) no-repeat center center;
     background-size: cover;
     border-radius: 2%;
     height: 56vh;
@@ -717,7 +678,7 @@ body {
 }
 
 .modal {
-    background: url(images/template_main.jpg);
+    background: url(/images/template_main.jpg);
     background-size: cover;
 
 }
@@ -1306,7 +1267,7 @@ body {
 }
 
 .chatbox__display {
-    background: url(images/help.jpg);
+    background: url(/images/help.jpg);
     background-size: cover;
     width: 100%;
     height: 20em;
@@ -1392,7 +1353,7 @@ body {
     position: relative;
     height: 25vh;
     width: 100%;
-    background: url(images/template_main.jpg);
+    background: url(/images/template_main.jpg);
     border: 3px solid rgb(255, 255, 255);
     border-radius: 2%;
     background-size: cover;
@@ -1508,7 +1469,7 @@ body {
     position: relative;
     height: 25vh;
     width: 100%;
-    background: url(images/template_main.jpg);
+    background: url(/images/template_main.jpg);
     border: 3px solid rgb(255, 255, 255);
     border-radius: 2%;
     background-size: cover;
@@ -1630,7 +1591,7 @@ body {
 
 
 .bacImage {
-    background: url(images/ds.jpg);
+    background: url(/images/ds.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;

@@ -19,8 +19,6 @@ let hamburger = document.querySelector(".hamburger").addEventListener(
 
 
 
-
-
 ///////////////////// לחיצה על הכפתור בתמונה ולהציג חלון עם הודעה
 
 
@@ -29,30 +27,31 @@ let modalBtn = document.querySelector('#modalButtom-btn');
 let closeBtn = document.querySelector('.closePop');
 
 modalBtn.addEventListener( //לחיצה
-    'click',
-    function () {
-        modal.style.display = 'block';
-    }
+  'click',
+  function () {
+    modal.style.display = 'block';
+  }
 );
 
 
 closeBtn.addEventListener( //לסגור אם איקס
-    'click',
-    function () {
-        modal.style.display = 'none';
-    }
+  'click',
+  function () {
+    modal.style.display = 'none';
+  }
 );
 
 
 window.addEventListener( //לסגור ברקע
-    'click', outsideClick
+  'click', outsideClick
 );
 
 function outsideClick(e) {
-    if (e.target == modal) {
-        modal.style.display = 'none';
-    }
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
 }
+
 
 
 
@@ -190,12 +189,14 @@ toggleChatboxBtn.addEventListener("click", () => { //לחיצה כדאי שיו�
 });
 
 
-let createChatBubble = input => {
+
+const createChatBubble = input => {
   const chatSection = document.createElement("p"); //יצירת כתב מסוג 
   chatSection.textContent = input; //להציג את התגובה בחלון של שירות שרשמנו
   chatSection.classList.add("chatbox__display-chat");
   chatboxMsgDisplay.appendChild(chatSection);
 };
+
 
 
 //לחיצה על כפתור שליחה הודעה בצאט
@@ -207,80 +208,6 @@ chatboxForm.addEventListener("submit", e => {
   e.preventDefault();
   chatboxForm.reset();
 });
-
-
-
-
-
-
-
-//סל קניות
-window.onload = function () {
-  //לחיצה
-  let iconShopping = document.querySelector('.iconShopping');
-  let cartCloseBtn = document.querySelector('.fa-close');
-  let cartBox = document.querySelector('.cartBox');
-  iconShopping.addEventListener("click", function () {
-    cartBox.classList.add('active');
-  });
-  cartCloseBtn.addEventListener("click", function () {
-    cartBox.classList.remove('active');
-  });
-
-
-  // הוספה מידע
-  let attToCartBtn = document.getElementsByClassName('attToCart');
-  let items = [];
-  for (let i = 0; i < attToCartBtn.length; i++) {
-    attToCartBtn[i].addEventListener("click", function (e) {
-      if (typeof (Storage) !== 'undefined') {
-        let item = {
-          id: i + 10,
-          name: e.target.parentElement.children[0].textContent,
-          price: e.target.parentElement.children[1].children[0].textContent,
-          no: document.getElementById('number').value
-        };
-        if (JSON.parse(localStorage.getItem('items')) === null) {
-          items.push(item);
-          localStorage.setItem("items", JSON.stringify(items));
-          window.location.reload();
-        } else {
-          let localItems = JSON.parse(localStorage.getItem("items"));
-          localItems.map(data => {
-            if (item.id == data.id) {
-              item.no = Number(data.no);
-            } else {
-              items.push(data);
-            }
-          });
-          items.push(item);
-          localStorage.setItem('items', JSON.stringify(items));
-          window.location.reload();
-        }
-      }
-    });
-  }
-
-  //הדפסה 
-  let iconShoppingP = document.querySelector('.iconShopping p');
-  let no1 = 0;
-  JSON.parse(localStorage.getItem('items')).map(data => {
-   no1 +=  Number(data.no);
-
-  });
-  iconShoppingP.innerHTML = no1;
-
-
-  let cardBoxTable = cartBox.querySelector('table');
-  let tableData = '';
-
-  JSON.parse(localStorage.getItem('items')).map(data => {
-    tableData += '<tr class="BoxIt"><th>' + data.id + '</th><th class="vv">' + 'name: ' + data.name + ' | ' + '</th><th class="ss">' + 'Amount: ' + data.no + ' | ' + '</th><th class="xx">' + 'price : ' + data.price + ' | ' + '</th><th><a href="#" onclick=Delete(this);>Delete</a></th></tr>';
-  });
-
-  cardBoxTable.innerHTML = tableData;
-}
-
 
 
 
@@ -351,3 +278,73 @@ window.onload = function () {
 // });
 
 // cardBoxTableZ.innerHTML = tableDataZ;
+
+
+
+
+
+//סל
+
+window.onload = function () {
+  let iconShopping = document.querySelector('.iconShopping');
+  let cartCloseBtn = document.querySelector('.fa-close');
+  let cartBox = document.querySelector('.cartBox');
+  iconShopping.addEventListener("click", function () {
+    cartBox.classList.add('active');
+  });
+  cartCloseBtn.addEventListener("click", function () {
+    cartBox.classList.remove('active');
+  });
+
+
+  let attToCartBtn = document.getElementsByClassName('attToCart');
+  let items = [];
+  for (let i = 0; i < attToCartBtn.length; i++) {
+    attToCartBtn[i].addEventListener("click", function (e) {
+      if (typeof (Storage) !== 'undefined') {
+        let item = {
+          id: i + 30,
+          name: e.target.parentElement.children[0].textContent,
+          price: e.target.parentElement.children[1].children[0].textContent,
+          no: document.getElementById('number').value
+        };
+        if (JSON.parse(localStorage.getItem('items')) === null) {
+          items.push(item);
+          localStorage.setItem("items", JSON.stringify(items));
+          window.location.reload();
+        } else {
+          let localItems = JSON.parse(localStorage.getItem("items"));
+          localItems.map(data => {
+            if (item.id == data.id) {
+              item.no = Number(data.no);
+            } else {
+              items.push(data);
+            }
+          });
+          items.push(item);
+          localStorage.setItem('items', JSON.stringify(items));
+          window.location.reload();
+        }
+      }
+    });
+  }
+
+
+  let iconShoppingP = document.querySelector('.iconShopping p');
+  let no1 = 0;
+  JSON.parse(localStorage.getItem('items')).map(data => {
+    no1 += Number(data.no);
+  });
+  iconShoppingP.innerHTML = no1;
+
+
+
+  let cardBoxTable = cartBox.querySelector('table');
+  let tableData = '';
+
+  JSON.parse(localStorage.getItem('items')).map(data => {
+    tableData += '<tr class="BoxIt"><th>' + data.id + '</th><th class="vv">' + 'name: ' + data.name + ' | ' + '</th><th class="ss">' + 'Amount: ' + data.no + ' | ' + '</th><th class="xx">' + 'price : ' + data.price + ' | ' + '</th><th><a href="#" onclick=Delete(this);>Delete</a></th></tr>';
+  });
+
+  cardBoxTable.innerHTML = tableData;
+}

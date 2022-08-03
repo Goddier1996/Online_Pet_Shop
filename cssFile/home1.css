@@ -4,6 +4,7 @@ body {
 
 
 
+
 /*/ אייקונים למעלה  /*/
 
 .first {
@@ -14,145 +15,6 @@ body {
     margin-top: 1%;
 }
 
-
-
-/*כפתור מידע על המחנות למעלה*/
-:root {
-    --modal-duration: 2s;
-    --modal-color: #d69110;
-}
-
-.modalSlidePop {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.contentPop {
-    margin: 10% auto;
-    border-radius: 50%;
-    background: none;
-    width: 60%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: var(--modal-duration);
-}
-
-.headerPop {
-    background: rgb(243, 247, 59);
-    color: #fff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
-
-.TextPop {
-    align-items: center;
-    text-align: center;
-    display: flex;
-    padding: 10px 20px;
-    background: url(images/dog.jpg);
-    background-size: cover;
-    height: 50vh;
-    border-radius: 30%
-}
-
-.TextPop p {
-    background: rgb(255, 255, 255);
-    border-radius: 2%;
-    opacity: 0.6;
-    font-weight: bold;
-}
-
-.footerPop {
-    background: var(--modal-color);
-    padding: 10px;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-radius: 50%;
-    border: 0;
-}
-
-.headerPop span {
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-}
-
-.headerPop span:hover,
-.headerPop span:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-@keyframes modalopen {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .button3 {
-        margin-top: 50%;
-    }
-}
-
-/*/ חיפוש /*/
-
-.form__field {
-    color: black;
-    text-decoration: none;
-    font-family: "Luckiest Guy", cursive;
-    width: auto;
-    border: 0;
-    border-bottom: 1px solid black;
-    outline: 0;
-    font-size: 9px;
-    background: transparent;
-    transition: border-color 0.2s;
-}
-
-.form__field::placeholder {
-    color: black;
-    font-size: 13px;
-}
-
-.form__field:placeholder-shown~.form__label {
-    cursor: text;
-}
-
-.form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-}
-
-.form__field:focus {
-    padding-bottom: 3px;
-    border-width: 3px;
-    border-image: linear-gradient(to right, #996911, #38ef7d);
-    border-image-slice: 1;
-}
 
 
 
@@ -181,7 +43,7 @@ body {
 
 
 /*/ אייקון הוספה למועדפים ראשי /*/
-
+/* 
 .icomF {
     text-align: center;
     -webkit-font-smoothing: antialiased;
@@ -222,6 +84,18 @@ body {
         font-size: 7px;
     }
 
+} */
+.infoIcon {
+    display: inline-block;
+    padding: 0px 3px 3px 3px;
+    color: #E83188;
+    font-size: 22px;
+    border-radius: 50%;
+    border: solid 3px #E83188;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 
@@ -235,8 +109,8 @@ body {
 }
 
 .info img {
-    width: 13vh;
-    height: 13vh;
+    width: 10vh;
+    height: 10vh;
     cursor: pointer;
 }
 
@@ -357,7 +231,7 @@ body {
 /*תפריט*/
 .menu {
     height: auto;
-    background: url(images/template_main.jpg);
+    background: url(/images/template_main.jpg);
     border-radius: 5%;
     position: relative;
     margin-bottom: -8px;
@@ -403,15 +277,14 @@ body {
 
     .line {
         width: 30px;
-        height: 3px;
+        height: 2px;
         background: rgb(0, 0, 0);
         margin: 5px;
     }
 
     .hamburger {
-        background: rgb(243, 247, 59);
-        border: 4px solid rgb(255, 255, 255);
-        border-radius: 25%;
+        background: none;
+        border: 1px solid rgb(0, 0, 0);
         margin-top: -4%;
         position: absolute;
         cursor: pointer;
@@ -424,7 +297,7 @@ body {
 
     .links {
         position: fixed;
-        background: url(images/template_main.jpg);
+        background: url(/images/template_main.jpg);
         border-radius: 20% 40% 5%;
         height: auto;
         width: 100%;
@@ -472,51 +345,662 @@ body {
 
 
 
+/*קרוסלה*/
 
+/* 
+.wrap {
+    position: relative;
+    margin-bottom: 2%;
+}
 
-
-
-
-
-
-.info12 {
-    margin-top: 2%;
-    background: url(images/dogPro.png) no-repeat center center;
+.slide {
     background-size: cover;
-    border-radius: 2%;
-    height: 56vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 3%;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border-radius: 1%;
     -webkit-box-shadow: 14px 31px 91px -38px rgba(255, 242, 0, 0.47);
     -moz-box-shadow: 14px 31px 91px -38px rgba(255, 242, 0, 0.47);
     box-shadow: 14px 31px 91px -38px rgba(255, 242, 0, 0.47);
 }
 
-.info12 h1 {
-    font-family: "Luckiest Guy", cursive;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
+.slide1 {
+    background-image: url("images/p12.png");
+}
+
+.slide2 {
+    background-image: url("images/mz.png");
+}
+
+.slide3 {
+    background-image: url("images/Dog_-_B_G_-_Hero_Desktop_1.png");
+}
+
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: -21%;
-    letter-spacing: 5px;
-    text-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.slide-content button {
+    font-size: 30px;
+    align-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent rgb(201, 119, 64)transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent rgb(197, 201, 0);
+    right: 0;
+    margin-right: 30px;
+} */
+
+
+
+
+/*כפתור מידע על המחנות למעלה*/
+:root {
+    --modal-duration: 2s;
+    --modal-color: #d69110;
+}
+
+/* .button3 {
+    margin-top: 15%;
+}
+
+.button3 button {
+    background: #ffe600;
+    border: 2px solid rgb(255, 255, 255);
+
+    border-radius: 2%;
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+    height: 6.1vh;
+    align-items: center;
+    outline: none;
+}
+
+
+.button3 button p {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+}
+
+.button3 button:hover {
+    background: #ffffff;
+} */
+
+
+
+
+
+.modalSlidePop {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contentPop {
+    margin: 10% auto;
+    border-radius: 50%;
+    background: none;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.headerPop {
+    background: rgb(243, 247, 59);
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
 
-@media only screen and (max-width: 560px) {
-    .info12 h1 {
-        margin-top: -55%;
-        font-size: 20px;
+.TextPop {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 10px 20px;
+    background: url(/images/dog.jpg);
+    background-size: cover;
+    height: 50vh;
+    border-radius: 30%
+}
+
+.TextPop p {
+    background: rgb(255, 255, 255);
+    border-radius: 2%;
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+.footerPop {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.headerPop span {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.headerPop span:hover,
+.headerPop span:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button3 {
+        margin-top: 50%;
+    }
+}
+
+
+/*כותרת קטגוריה של מוצרים*/
+/* .title1 {
+    margin-bottom: -2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title1 h1 {
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    font-size: 50px;
+    padding: 0;
+    letter-spacing: 5px;
+    color: rgb(255, 182, 45);
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+        0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+        0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+        -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+} */
+
+
+
+
+/*קאטגוריה של מוצרים*/
+.Catalog {
+    margin: 3%;
+    margin-top: 2%;
+    border-radius: 30%;
+}
+
+
+.hovereffect1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1.5%;
+    float: left;
+    overflow: hidden;
+    cursor: default;
+    border-radius: 5%;
+}
+
+.overlay1 a p {
+    font-family: "Luckiest Guy", cursive;
+    background-color: rgb(141, 243, 111);
+    border-radius: 1%;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+
+}
+
+
+.hovereffect1 .overlay1 {
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 55%;
+    height: auto;
+    border-radius: 7%;
+    border: 2px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(50%, 50%, 0);
+    transform: translate3d(50%, 50%, 0);
+}
+
+.hovereffect1:hover .overlay1 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hovereffect1 img {
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+.hovereffect1:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.4" /><feFuncG type="linear" slope="1.4" /><feFuncB type="linear" slope="1.4" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(1.4);
+    -webkit-filter: brightness(1.4);
+}
+
+.hovereffect1 h2 {
+    font-family: "Luckiest Guy", cursive;
+    margin: 5%;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    background: #ffc107;
+    padding: 35px;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-150%, -400%, 0);
+    transform: translate3d(-150%, -400%, 0);
+}
+
+.hovereffect1 a,
+.hovereffect1 p {
+    color: #FFF;
+    opacity: 0;
+    text-align: center;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-150%, -400%, 0);
+    transform: translate3d(-150%, -400%, 0);
+}
+
+.hovereffect1:hover a,
+.hovereffect1:hover p,
+.hovereffect1:hover h2,
+.hovereffect1:hover .overlay1 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+
+
+
+/*כותרת מוצרים טופ של השבוע*/
+.title2 {
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Luckiest Guy", cursive;
+}
+
+.title2 h1 {
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    font-size: 50px;
+    padding: 0;
+    color: wheat;
+    text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+        0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+        0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+        -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+.title2 span {
+    transform: scale(0.9);
+    display: inline-block;
+}
+
+.title2 span:first-child {
+    animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+
+.title2 span:last-child {
+    animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+
+
+@keyframes bop {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50%,
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bopB {
+    0% {
+        transform: scale(0.9);
+    }
+
+    80%,
+    100% {
+        transform: scale(1) rotateZ(-3deg);
     }
 }
 
 
 
 
+/*/מוצרים נמכרים ביותר/*/
 
+.topPro {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardd {
+    width: 200px;
+    height: 280px;
+    background: #f4f4f4;
+    position: relative;
+    border-radius: 15%;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow .5s ease-in-out,
+        transform .5s ease-in-out;
+    overflow: hidden;
+    margin: 1%;
+    border: 5px solid wheat;
+}
+
+.cardd:hover {
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, .2);
+}
+
+.imgBox {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.details {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: #ffdc73;
+    padding: 10px 20px;
+    bottom: -30%;
+    transition: .5s;
+}
+
+.details:hover {
+    bottom: 0;
+}
+
+.textContent {
+    position: relative;
+    margin-top: 10px;
+    color: #555;
+}
+
+.textContent h3 {
+    font-size: 18px;
+    padding: 5px 0;
+    font-family: "Luckiest Guy", cursive;
+}
+
+.price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-family: "Luckiest Guy", cursive;
+}
+
+
+.details button {
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    background: #b6b432;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Luckiest Guy", cursive;
+
+}
+
+.details button:hover {
+    background: #ffffff;
+}
+
+.description1 {
+    background: rgb(193, 255, 113);
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: -70px;
+    right: -70px;
+    border-radius: 0 0 200px 200px;
+    transition: all .5s, border-radius 1s, top 1s;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.description1 .icon {
+    position: absolute;
+    top: 85px;
+    right: 85px;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.description1:hover {
+    width: 100%;
+    height: 80%;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+}
+
+.description1:hover .icon {
+    opacity: 0;
+}
+
+.description1 .contents {
+    color: #fff;
+    padding: 5%;
+    transform: scale(0.5);
+    transform: translateY(-200%);
+    transition: opacity .2s, transform .8s;
+    opacity: 0;
+}
+
+.description1:hover .contents {
+    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.description1 h2 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Luckiest Guy", cursive;
+    color: rgb(0, 0, 0);
+}
+
+.contents p {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: "Luckiest Guy", cursive;
+
+}
+
+
+
+
+
+/*קרוסלה אוטומטית של מותגים*/
+.Brands {
+    color: #111;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+
+:root {
+    --marquee-width: 100%;
+    --marquee-height: 10vh;
+    /* --marquee-elements: 12; */
+    /* defined with JavaScript */
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+    background: url(/images/template_main.jpg);
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20%;
+}
+
+.marquee:before,
+.marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+}
+
+.marquee:before {
+    left: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, transparent 100%);
+}
+
+.marquee:after {
+    right: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255) 0%, transparent 100%);
+}
+
+.marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+    }
+}
+
+.marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height)*3/4);
+    white-space: nowrap;
+}
+
+.marquee-content li img {
+    width: 40%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .marquee-content li img {
+        width: 80%;
+        height: auto;
+    }
+}
 
 
 /*/  סיום אתר /*/
@@ -685,6 +1169,119 @@ body {
 
 
 
+/*/  ציאט עזרה ללקוחות/*/
+.chatbox {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    bottom: 0;
+    position: fixed;
+    right: 1em;
+    -webkit-transform: translatey(23.5em);
+    transform: translatey(23.5em);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    width: 18.5em;
+    font-family: "Luckiest Guy", cursive;
+
+}
+
+.chatbox--is-visible {
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+}
+
+.chatbox__header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: rgb(236, 120, 43);
+    border: 2px outset rgb(255, 255, 255);
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0 0.75em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.chatbox__header-cta-text {
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 1.025rem;
+}
+
+.chatbox__header-cta-icon {
+    color: #fff;
+    margin-right: 0.75em;
+}
+
+.chatbox__header-cta-btn {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none;
+    padding: 0.5em;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+
+}
+
+.chatbox__header-cta-btn:hover {
+    color: #fff;
+}
+
+.chatbox__display {
+    background: url(/images/help.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 20em;
+    overflow: auto;
+    padding: 0.75em;
+}
+
+.chatbox__display-chat {
+    background: #fff;
+    opacity: 0.7;
+    font-weight: bold;
+    border-radius: 0.5em;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0.75em;
+    text-align: justify;
+}
+
+.chatbox__form {
+    display: -webkit-box;
+    display: flex;
+}
+
+.chatbox__form-input {
+    border: none;
+    outline: none;
+    background: rgb(243, 247, 59);
+    color: #222;
+    font-size: 0.9rem;
+    padding: 1.25em 1em;
+    width: 100%;
+}
+
+.chatbox__form-input:required {
+    box-shadow: none;
+}
+
+.chatbox__form-submit {
+    border: none;
+    background: rgb(141, 243, 111);
+    color: rgb(0, 0, 0);
+    padding: 1em;
+}
+
 
 
 /*/ דף קשר פןפ אפ/*/
@@ -715,7 +1312,7 @@ body {
 }
 
 .modal {
-    background: url(images/template_main.jpg);
+    background: url(/images/template_main.jpg);
     background-size: cover;
 
 }
@@ -1168,7 +1765,6 @@ body {
     transition: all linear .5s;
 }
 
-
 .shape-6 {
     background-color: #fff;
     left: 40px;
@@ -1233,129 +1829,6 @@ body {
 
 
 
-
-
-
-/*/  ציאט עזרה ללקוחות/*/
-.chatbox {
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
-    bottom: 0;
-    position: fixed;
-    right: 1em;
-    -webkit-transform: translatey(23.5em);
-    transform: translatey(23.5em);
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
-    width: 18.5em;
-    font-family: "Luckiest Guy", cursive;
-
-}
-
-.chatbox--is-visible {
-    -webkit-transform: translatey(0);
-    transform: translatey(0);
-}
-
-.chatbox__header {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background: rgb(236, 120, 43);
-    border: 2px outset rgb(255, 255, 255);
-    border-top-right-radius: 0.5em;
-    border-top-left-radius: 0.5em;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    padding: 0 0.75em;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.chatbox__header-cta-text {
-    outline: none;
-    color: rgb(0, 0, 0);
-    font-weight: 300;
-    font-size: 1.025rem;
-}
-
-.chatbox__header-cta-icon {
-    color: #fff;
-    margin-right: 0.75em;
-}
-
-.chatbox__header-cta-btn {
-    background: none;
-    border: none;
-    color: rgb(0, 0, 0);
-    outline: none;
-    padding: 0.5em;
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
-
-}
-
-.chatbox__header-cta-btn:hover {
-    color: #fff;
-}
-
-.chatbox__display {
-    background: url(images/help.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 20em;
-    overflow: auto;
-    padding: 0.75em;
-}
-
-.chatbox__display-chat {
-    background: #fff;
-    opacity: 0.7;
-    font-weight: bold;
-    border-radius: 0.5em;
-    color: #666;
-    font-size: 15px;
-    line-height: 1.5;
-    padding: 0.75em;
-    text-align: justify;
-}
-
-.chatbox__form {
-    display: -webkit-box;
-    display: flex;
-}
-
-.chatbox__form-input {
-    border: none;
-    outline: none;
-    background: rgb(243, 247, 59);
-    color: #222;
-    font-size: 0.9rem;
-    padding: 1.25em 1em;
-    width: 100%;
-}
-
-.chatbox__form-input:required {
-    box-shadow: none;
-}
-
-.chatbox__form-submit {
-    border: none;
-    background: rgb(141, 243, 111);
-    color: rgb(0, 0, 0);
-    padding: 1em;
-}
-
-
-
-
-
-
-
-
 /*פןפ אפ סל קניות*/
 .cartBox {
     position: fixed;
@@ -1389,7 +1862,7 @@ body {
     position: relative;
     height: 25vh;
     width: 100%;
-    background: url(images/template_main.jpg);
+    background: url(/images/template_main.jpg);
     border: 3px solid rgb(255, 255, 255);
     border-radius: 2%;
     background-size: cover;
@@ -1516,7 +1989,7 @@ body {
 
 
 
-
+/* 
 .cartBoxXX .cartVV i:hover {
     background: #ff0000a5;
 }
@@ -1549,9 +2022,9 @@ body {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 16px;
-}
+} */
 
-.cartVV img {
+/* .cartVV img {
     width: 40px;
     height: 40px;
 }
@@ -1566,10 +2039,10 @@ body {
 .xx {
     color: coral;
     font-size: 15px;
-}
+} */
 
 
-.ss {
+/* .ss {
     color: darkcyan;
     font-size: 15px;
 }
@@ -1577,254 +2050,18 @@ body {
 .vv {
     color: rgb(255, 0, 234);
     font-size: 15px;
-}
+} */
 
 
 
 
+/*תמונה סוף העמוד*/
 
 
-
-/*/  כותרות/*/
-.title2 {
-    margin-bottom: 5%;
-    font-family: "Luckiest Guy", cursive;
-}
-
-.title2 h2 {
-    color: rgb(77, 77, 77);
-    font-size: 20px;
-    margin-bottom: 3%;
-}
-
-
-.title2 h6 {
-    font-weight: bold;
-    font-size: 19px;
-
-}
-
-.title2 p {
-    font-size: 14px;
-
-}
-
-
-.title11 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2%;
-    font-family: "Luckiest Guy", cursive;
-}
-
-
-.title11 h1 {
-    color: red;
-    font-size: 20px;
-}
-
-
-
-.bacImage {
-    background: url(images/ds.jpg);
-    background-attachment: fixed;
+.EndImage img {
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 15vh;
-    margin-bottom: 2%;
-    border-radius: 5%;
-}
-
-
-/*/ תבניות של מוצרים בקטגוריה/*/
-
-.ProtuctColorPage {
-    background: rgba(255, 238, 0, 0.1);
-    -webkit-box-shadow: 0px 0px 300px 150px rgba(255, 238, 0, 0.1);
-    -moz-box-shadow: 0px 0px 300px 150px rgba(255, 238, 0, 0.1);
-    box-shadow: 0px 0px 300px 150px rgba(255, 238, 0, 0.1);
-}
-
-.BoxCards {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-.snip1423 {
-    font-family: "Oswald", Arial, sans-serif;
-    position: relative;
-    margin: 25px auto;
-    width: 245px;
     height: auto;
-    background: url(images/template_main.jpg);
-    border-radius: 12%;
-    border: 10px solid white;
-    text-align: center;
-    color: #000000;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    font-size: 16px;
-    box-sizing: border-box;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-.snip1423 * {
-    -webkit-box-sizing: padding-box;
-    box-sizing: padding-box;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-.snip1423 img {
-    padding: 5%;
-    width: 100%;
-    height: 200px;
-    vertical-align: top;
-    position: relative;
-    border-radius: 25%;
-}
-
-.snip1423 figcaption {
-    padding: 20px 15px;
-}
-
-.snip1423 h3,
-.snip1423 p {
-    margin: 0;
-    font-family: "Luckiest Guy", cursive;
-
-}
-
-.snip1423 h3 {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-}
-
-.snip1423 p {
-    margin-top: -8%;
-    font-size: 12px;
-    letter-spacing: 1px;
-    font-weight: 300;
-}
-
-.snip1423 .price h2 {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 48px;
-    letter-spacing: 1px;
-    font-family: "Luckiest Guy", cursive;
-    margin-top: -8%;
-    color: green;
-}
-
-
-.snip1423:hover,
-.snip1423.hover {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-}
-
-.snip1423 a.add-btn {
-    margin-top: 5%;
-    background-color: #444;
-    color: rgb(255, 255, 255);
-    border-radius: 50%;
-    display: inline-block;
-    font-size: 14px;
-    padding: 8px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 400ms ease;
-    font-family: "Luckiest Guy", cursive;
-}
-
-a.add-btn:hover {
-    background-color: #555;
-}
-
-
-/*/ לחצן על הוספה למועדפים /*/
-.LovePro {
-    margin-bottom: 5%;
-    display: inline-block;
-    color: olivedrab;
-}
-
-.LovePro img {
-    width: auto;
-    height: 30px;
-}
-
-
-
-
-.bacImage1 {
-    width: 100%;
-    height: 4vh;
-    background: #554d3d;
-    margin-bottom: 4%;
-    margin-top: 4%;
-    border-radius: 50%;
-    position: relative;
-}
-
-.bacImage1 img {
-    margin-top: -2.8%;
-    left: 10%;
-    position: absolute;
-    width: auto;
-    height: 15vh;
-}
-
-@media only screen and (max-width: 748px) {
-    .bacImage1 img {
-        margin-top: -8%;
-    }
-
-    .bacImage1 {
-        margin-bottom: 6%;
-    }
-}
-
-
-
-/*/רייקונים של שירות לקוחות/*/
-.infoSH {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-.inCon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inCon img {
-    border-radius: 50%;
-    width: auto;
-    height: 55px;
-}
-
-.inCon p {
-    margin: 2%;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    font-family: "Luckiest Guy", cursive;
-}
-
-@media only screen and (max-width: 800px) {
-    .inCon img {
-        width: auto;
-        height: 30px;
-    }
-
-    .inCon p {
-        font-size: 10px;
-    }
+    margin-top: 1%;
 }

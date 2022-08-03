@@ -19,6 +19,8 @@ let hamburger = document.querySelector(".hamburger").addEventListener(
 
 
 
+
+
 ///////////////////// לחיצה על הכפתור בתמונה ולהציג חלון עם הודעה
 
 
@@ -27,30 +29,31 @@ let modalBtn = document.querySelector('#modalButtom-btn');
 let closeBtn = document.querySelector('.closePop');
 
 modalBtn.addEventListener( //לחיצה
-    'click',
-    function () {
-        modal.style.display = 'block';
-    }
+  'click',
+  function () {
+    modal.style.display = 'block';
+  }
 );
 
 
 closeBtn.addEventListener( //לסגור אם איקס
-    'click',
-    function () {
-        modal.style.display = 'none';
-    }
+  'click',
+  function () {
+    modal.style.display = 'none';
+  }
 );
 
 
 window.addEventListener( //לסגור ברקע
-    'click', outsideClick
+  'click', outsideClick
 );
 
 function outsideClick(e) {
-    if (e.target == modal) {
-        modal.style.display = 'none';
-    }
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
 }
+
 
 
 
@@ -99,6 +102,7 @@ let closeFormX = function () {
 let closeFormB = function () {
   buttonB.className = '';
 };
+
 
 
 
@@ -177,6 +181,8 @@ let add = () => {
 
 
 
+
+
 ///////////////////////////////////////חלונית עזרה ללקוחות
 let toggleChatboxBtn = document.querySelector(".js-chatbox-toggle");
 let chatbox = document.querySelector(".js-chatbox");
@@ -187,8 +193,6 @@ let chatboxForm = document.querySelector(".js-chatbox-form");
 toggleChatboxBtn.addEventListener("click", () => { //לחיצה כדאי שיופיע החלונית
   chatbox.classList.toggle("chatbox--is-visible");
 });
-
-
 
 const createChatBubble = input => {
   const chatSection = document.createElement("p"); //יצירת כתב מסוג 
@@ -281,9 +285,7 @@ chatboxForm.addEventListener("submit", e => {
 
 
 
-
-
-//סל
+//סל קניות
 
 window.onload = function () {
   let iconShopping = document.querySelector('.iconShopping');
@@ -303,7 +305,7 @@ window.onload = function () {
     attToCartBtn[i].addEventListener("click", function (e) {
       if (typeof (Storage) !== 'undefined') {
         let item = {
-          id: i + 30,
+          id: i + 20,
           name: e.target.parentElement.children[0].textContent,
           price: e.target.parentElement.children[1].children[0].textContent,
           no: document.getElementById('number').value
@@ -329,14 +331,12 @@ window.onload = function () {
     });
   }
 
-  
   let iconShoppingP = document.querySelector('.iconShopping p');
   let no1 = 0;
   JSON.parse(localStorage.getItem('items')).map(data => {
-    no1 +=  Number(data.no);
+    no1 += Number(data.no);
   });
   iconShoppingP.innerHTML = no1;
-
 
 
   let cardBoxTable = cartBox.querySelector('table');
