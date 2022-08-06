@@ -32,20 +32,6 @@
             localStorage.setItem('items', JSON.stringify(items));
             window.location.reload();
         };
-
-
-        function DeleteZX(x) {
-            let itemsZ = [];
-            JSON.parse(localStorage.getItem('itemsZ')).map(data => {
-                if (data.idZ != x.parentElement.parentElement.children[0].textContent) {
-
-                    items.push(data);
-
-                }
-            });
-            localStorage.setItem('itemsZ', JSON.stringify(itemsZ));
-            window.location.reload();
-        };
     </script>
 
 
@@ -61,17 +47,17 @@
 
     <div class="first">
 
-        <div class="iconLogin" onclick="openLogin()">
+        <!-- <div class="iconLogin" onclick="openLogin()">
             <a href="#">
                 <p><i class="fa fa-address-book" style="font-size:20px"></i>
                     Login
                 </p>
             </a>
-        </div>
+        </div> -->
 
         <div class="iconShop" onclick="openTerms()">
             <a href="#">
-                <p><i class="fa fa-shipping-fast" style='font-size:20px'></i>
+                <p><i class="fa fa-paw" style='font-size:20px'></i>
                     Shipping Terms
                 </p>
             </a>
@@ -350,7 +336,7 @@
 
                 <h5><span>"Free shipping</span><span>the
                         whole</span><span>country!</span><br><span>reservations:<br></span><br><span>
-                        (0542546828)-(0541832027)</span></h5>
+                        (0541832027)</span></h5>
             </div>
 
             <div class="icomShope iconShopping">
@@ -415,116 +401,6 @@
 
 
 
-
-
-    <!-- קרוסלה תמונה ראשית -->
-
-    <!-- <div class="container-fulid">
-        <div class="wrap">
-
-            <div id="arrow-left" class="arrow"></div>
-            <div id="slider">
-
-
-                <div class="slide slide1">
-                    <div class="slide-content">
-
-                        <div class="button3">
-                            <button id="modalButtom-btn">
-                                <p>about the shop</p>
-                            </button>
-                        </div>
-
-                        <div id="my-modalPopUp" class="modalSlidePop">
-                            <div class="contentPop">
-
-                                <div class="headerPop">
-                                    <span class="closePop">x</span>
-                                </div>
-
-                                <div class="TextPop">
-                                    <p>In our store you will find the best customer service in the country.
-                                        Many customers leave satisfied after buying products in our store, and most
-                                        importantly also satisfied animals.</p>
-                                </div>
-
-                                <div class="footerPop">
-                                    <h3>Sweet Home </h3>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="slide slide2">
-                    <div class="slide-content">
-                        <div class="button3">
-                            <button id="modalButtom-btn">
-                                <p>about the shop</p>
-                            </button>
-                        </div>
-
-                        <div id="my-modalPopUp" class="modalSlidePop">
-                            <div class="contentPop">
-
-                                <div class="headerPop">
-                                    <span class="closePop">x</span>
-                                </div>
-
-                                <div class="TextPop">
-                                    <p>In our store you will find the best customer service in the country.
-                                        Many customers leave satisfied after buying products in our store, and most
-                                        importantly also satisfied animals.</p>
-                                </div>
-
-                                <div class="footerPop">
-                                    <h3>Sweet Home </h3>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="slide slide3">
-                    <div class="slide-content">
-                        <div class="button3">
-                            <button id="modalButtom-btn">
-                                <p>about the shop</p>
-                            </button>
-                        </div>
-
-                        <div id="my-modalPopUp" class="modalSlidePop">
-                            <div class="contentPop">
-
-                                <div class="headerPop">
-                                    <span class="closePop">x</span>
-                                </div>
-
-                                <div class="TextPop">
-                                    <p>In our store you will find the best customer service in the country.
-                                        Many customers leave satisfied after buying products in our store, and most
-                                        importantly also satisfied animals.</p>
-                                </div>
-
-                                <div class="footerPop">
-                                    <h3>Sweet Home </h3>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div id="arrow-right" class="arrow"></div>
-        </div>
-    </div> -->
 
 
 
