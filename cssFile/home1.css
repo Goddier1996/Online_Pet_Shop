@@ -23,21 +23,18 @@ body {
     color: black;
     font-size: 13px;
     text-decoration: none;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .iconShop a {
     color: black;
     font-size: 13px;
     text-decoration: none;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .iconPhone a {
     color: black;
     font-size: 13px;
     text-decoration: none;
-    font-family: "Luckiest Guy", cursive;
 }
 
 
@@ -120,7 +117,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .info h5 {
@@ -258,7 +254,6 @@ body {
 .links a {
     text-decoration: none;
     color: #555;
-    font-family: "Luckiest Guy", cursive;
     font-size: 18px;
 }
 
@@ -598,7 +593,6 @@ body {
 }
 
 .overlay1 a p {
-    font-family: "Luckiest Guy", cursive;
     background-color: rgb(141, 243, 111);
     border-radius: 1%;
     font-size: 18px;
@@ -643,7 +637,6 @@ body {
 }
 
 .hovereffect1 h2 {
-    font-family: "Luckiest Guy", cursive;
     margin: 5%;
     text-transform: uppercase;
     text-align: center;
@@ -694,7 +687,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .title2 h1 {
@@ -752,7 +744,6 @@ body {
 /*/מוצרים נמכרים ביותר/*/
 
 .topPro {
-    font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -813,7 +804,6 @@ body {
 .textContent h3 {
     font-size: 18px;
     padding: 5px 0;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .price {
@@ -821,7 +811,6 @@ body {
     top: 0;
     right: 0;
     font-size: 20px;
-    font-family: "Luckiest Guy", cursive;
 }
 
 
@@ -835,8 +824,6 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    font-family: "Luckiest Guy", cursive;
-
 }
 
 .details button:hover {
@@ -896,15 +883,12 @@ body {
     margin: 20px 0;
     text-align: center;
     font-size: 17px;
-    font-family: "Luckiest Guy", cursive;
     color: rgb(0, 0, 0);
 }
 
 .contents p {
     font-size: 15px;
     color: rgb(0, 0, 0);
-    font-family: "Luckiest Guy", cursive;
-
 }
 
 
@@ -1010,7 +994,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
+    font: bold 16px;
     padding: 15px;
     margin-top: 2%;
     border-top-right-radius: 20%;
@@ -1029,7 +1013,7 @@ body {
 
 .footer-distributed h3 {
     color: #ffffff;
-    font: normal 36px 'Cookie', cursive;
+    font: normal 36px ;
     margin: 0;
 }
 
@@ -1180,8 +1164,6 @@ body {
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
     width: 18.5em;
-    font-family: "Luckiest Guy", cursive;
-
 }
 
 .chatbox--is-visible {
@@ -1305,7 +1287,6 @@ body {
 
 .Phone p {
     margin-top: 10%;
-    font-family: "Luckiest Guy", cursive;
     font-size: 30px;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -1654,7 +1635,6 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
 
 }
 
@@ -1895,7 +1875,6 @@ body {
     font-weight: bold;
     color: #ffffff;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
 }
 
 
@@ -1916,7 +1895,6 @@ body {
     border: 5px dashed orange;
     background: whitesmoke;
     opacity: 0.6;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .xx {

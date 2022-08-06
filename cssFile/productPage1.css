@@ -125,21 +125,18 @@ body {
     color: black;
     font-size: 13px;
     text-decoration: none;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .iconShop a {
     color: black;
     font-size: 13px;
     text-decoration: none;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .iconPhone a {
     color: black;
     font-size: 13px;
     text-decoration: none;
-    font-family: "Luckiest Guy", cursive;
 }
 
 
@@ -210,7 +207,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .info h5 {
@@ -389,7 +385,6 @@ body {
     font-weight: bold;
     color: #ffffff;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
 }
 
 
@@ -410,7 +405,6 @@ body {
     border: 5px dashed orange;
     background: whitesmoke;
     opacity: 0.6;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .xx {
@@ -495,7 +489,6 @@ body {
     font-weight: bold;
     color: #ffffff;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .closeZ {
@@ -527,7 +520,6 @@ body {
     border: 5px dashed orange;
     background: whitesmoke;
     opacity: 0.6;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .xx {
@@ -583,7 +575,6 @@ body {
 .links a {
     text-decoration: none;
     color: #555;
-    font-family: "Luckiest Guy", cursive;
     font-size: 18px;
 }
 
@@ -681,7 +672,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
+    font: bold 16px ;
     padding: 15px;
     margin-top: 2%;
     border-top-right-radius: 20%;
@@ -700,7 +691,7 @@ body {
 
 .footer-distributed h3 {
     color: #ffffff;
-    font: normal 36px 'Cookie', cursive;
+    font: normal 36px ;
     margin: 0;
 }
 
@@ -851,7 +842,6 @@ body {
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
     width: 18.5em;
-    font-family: "Luckiest Guy", cursive;
 
 }
 
@@ -977,7 +967,6 @@ body {
 
 .Phone p {
     margin-top: 10%;
-    font-family: "Luckiest Guy", cursive;
     font-size: 30px;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -1106,7 +1095,6 @@ body {
     padding: 5px 0;
     line-height: 1;
     font-size: 16px;
-    font-family: 'Raleway';
     border-bottom: solid 1px rgb(151, 151, 151);
     background-color: transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
@@ -1324,7 +1312,6 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
 
 }
 
@@ -1557,7 +1544,6 @@ h3 {
 
 .product-info h1 {
     margin-bottom: 5px;
-    font-family: "Luckiest Guy", cursive;
     color: #38ef7d;
 }
 
@@ -1669,7 +1655,6 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
 }
 
 /*/ תגובות/*/
@@ -1689,8 +1674,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .BoxInput ::placeholder {
     text-align: center;
     font-size: 15px;
-    font-family: "Luckiest Guy", cursive;
-
 }
 
 .BoxInput input,
@@ -1723,7 +1706,6 @@ input[type="number"]::-webkit-outer-spin-button {
     transition: .4s;
     width: 25%;
     font-size: 16px;
-    font-family: "Luckiest Guy", cursive;
 
 }
 
@@ -1735,7 +1717,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .list {
     display: grid;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
 
 }
 
@@ -1774,7 +1755,6 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
     width: 18.5em;
-    font-family: "Luckiest Guy", cursive;
 
 }
 
@@ -1944,7 +1924,6 @@ input[type="number"]::-webkit-outer-spin-button {
     font-weight: bold;
     color: #ffffff;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
 }
 
 
@@ -1965,7 +1944,6 @@ input[type="number"]::-webkit-outer-spin-button {
     border: 5px dashed orange;
     background: whitesmoke;
     opacity: 0.6;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .xx {
@@ -2064,7 +2042,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .textContent h3 {
     font-size: 18px;
     padding: 5px 0;
-    font-family: "Luckiest Guy", cursive;
 }
 
 .price {
@@ -2072,7 +2049,6 @@ input[type="number"]::-webkit-outer-spin-button {
     top: 0;
     right: 0;
     font-size: 20px;
-    font-family: "Luckiest Guy", cursive;
 }
 
 
@@ -2086,7 +2062,6 @@ input[type="number"]::-webkit-outer-spin-button {
     border: none;
     outline: none;
     cursor: pointer;
-    font-family: "Luckiest Guy", cursive;
 
 }
 
@@ -2147,13 +2122,11 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 20px 0;
     text-align: center;
     font-size: 17px;
-    font-family: "Luckiest Guy", cursive;
     color: rgb(0, 0, 0);
 }
 
 .contents p {
     font-size: 15px;
     color: rgb(0, 0, 0);
-    font-family: "Luckiest Guy", cursive;
 
 }
