@@ -1,8 +1,8 @@
-# online Pet shop - JavaScript , Html , Css
+# online Pet shop - JavaScript , Html , Css 
 in this project you can add a product to Shopping cart , what you need to buy.
+  
+Link Website - https://online-pet-shop.netlify.app
  
-Link Web Side - https://online-pet-shop.netlify.app
-
 # video :
 
 https://user-images.githubusercontent.com/59862302/179350546-e30ac0f3-3bfb-4458-a463-7795a075d0b6.mp4
